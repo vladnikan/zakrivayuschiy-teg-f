@@ -60,7 +60,7 @@
   inline-size: clamp(375px, 48.1vw + 190px, 700px);
   block-size: clamp(327px, 3.53vw + 312px, 368px);
   margin-block-start: 100px;
-  margin-block-end: 100px;
+  margin-block-end: 105px;
   max-block-size: 368px;
   border: 1px solid var(--accent-color);
   background-color: var(--element-bg-color);
@@ -75,6 +75,8 @@
 
 .header__text__main {
   font-size: clamp(3.063rem, 2.71rem + 1.502vi, 4.063rem);
+  margin-block-start: 10px;
+  margin-block-end: 20px;
 }
 
 .header__text__under {
@@ -115,7 +117,8 @@
 .card__description {
   font-size: 18px;
   line-height: 21px;
-  margin-block-start: 28px;
+  margin-block-start: 25px;
+  max-inline-size: 646px;
   margin-inline-start: 25px;
 }
 
@@ -132,10 +135,12 @@
 .image__label {
   position: absolute;
   text-shadow: 1px 0 var(--stroke-color);
-  top: 27px;
-  right: 25px;
+  top: 23px;
+  right: 20px;
   mix-blend-mode: hard-light;
   z-index: 2;
+  font-size: 14px;
+  letter-spacing: 0%;
 }
 
 @supports (-webkit-text-stroke: 0.5 var(--stroke-color)) {
@@ -157,6 +162,7 @@
   inline-size: 128px;
   block-size: 35px;
   margin-inline-end: 25px;
+  margin-inline-start: -10px;
   cursor: pointer;
   position: relative;
 }
@@ -217,7 +223,7 @@
   position: relative;
   outline: 2px black solid;
   inline-size: clamp(306px, calc(306px + (29 / 1065 * 100vw)), 335px);
-  block-size: clamp(55px, calc(55px + (29 / 1065 * 100vw)), 84px);
+  block-size: clamp(55px, calc(84px - (29 / 1065 * 100vw)), 84px);
   cursor: pointer;
   background-color: var(--element-bg-color);
 }
@@ -225,8 +231,8 @@
 .save__button img {
   inline-size: 21px;
   block-size: 21px;
-  margin-inline-start: 20px;
-  margin-inline-end: 4px;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
   position: relative;
   align-self: center;
   background-color: white;
@@ -292,6 +298,7 @@ dialog::backdrop {
 
 .multifilter__card {
   filter: blur(7px) brightness(1.5) contrast(3);
+  width: 100%;
 }
 
 .brightness_card {
@@ -335,8 +342,22 @@ dialog::backdrop {
 }
 
 @media (width <= 700px) {
+
+  .header__text__section {
+    margin-block-start: 85px;
+  }
+
   .card {
     inline-size: 100%;
+    margin-block-end: 50px;
+  }
+
+  .card__title {
+    margin-block-end: 5px;
+  }
+
+  .card__description {
+    inline-size: 317px;
   }
 
   .save__button {
@@ -350,5 +371,6 @@ dialog::backdrop {
     block-size: 28px;
     margin-block-start: 15px;
     margin-inline-end: 8px;
+    margin-block-end: 10px;
   }
 }
