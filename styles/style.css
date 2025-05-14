@@ -277,6 +277,10 @@ dialog::backdrop {
   display: flex;
 }
 
+.floppy__image {
+  margin-block-start: 10px;
+}
+
 .dialog__window img {
   inline-size: 39px;
   block-size: 39px;
