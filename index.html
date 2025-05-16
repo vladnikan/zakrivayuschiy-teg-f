@@ -5,45 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
     <link rel="icon" href="./svg/favicon-min.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./svg/favicon.png">
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
-
   <body class="page">
     <dialog id="dialog__window" class="dialog__window">
       <div class="dialog__content">
         <img class="floppy__image" src="./svg/floppy-min.svg" alt="дискета" />
-        <h3 class="dialog__text header__text">
+        <p class="dialog__text header__text">
           Вставьте дискету, чтобы продолжить
-        </h3>
+        </p>
       </div>
       <button
         class="dialog__button button__overall"
         type="button"
         onclick="window['dialog__window'].close()"
       >
-        ОК
+        ок
       </button>
     </dialog>
     <header class="header">
       <div class="header__text__section">
         <h1 class="header__text header__text__main">&lt;/html&gt;</h1>
-        <h1 class="header__text header__text__under">Закрывающий тег</h1>
+        <p class="header__text header__text__under">Закрывающий тег</p>
       </div>
     </header>
     <main>
       <section class="cards__section">
         <article class="card">
           <div class="card__title__section">
-            <h3 class="card__title">
+            <h2 class="card__title">
               Фритрек и нулевой спринт: Подготовка к работе
-            </h3>
+            </h2>
           </div>
           <div class="card__image__section">
-            <label class="image__label header__text">&lt;/html&gt;</label>
+            <label class="image__label label__text">&lt;/html&gt;</label>
             <img
               class="card__image"
               src="./images/image.png"
@@ -64,6 +64,7 @@
             <button
               class="heart__button card__icon-button button__overall"
               type="button"
+              aria-label="Кнопка лайка"
             >
               <!-- <img src="./svg/heart animation white.svg" alt="сердце" /> -->
               <svg
@@ -72,6 +73,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g clip-path="url(#a)">
                   <g class="heart">
@@ -104,21 +106,22 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button button__overall" type="button">
+            <button class="card__like-button button__overall button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </article>
         <article class="card">
           <div class="card__title__section">
-            <h3 class="card__title">1 спринт: Я — чистый лист</h3>
+            <h2 class="card__title">1 спринт: Я — чистый лист</h2>
           </div>
           <div class="card__image__section">
-            <label class="image__label header__text">&lt;/html&gt;</label>
+            <label class="image__label label__text">&lt;/html&gt;</label>
             <img
               class="card__image invert__card"
               src="./images/image.png"
               alt="пиксельное изображение дома на колесах"
+              loading="lazy"
             />
           </div>
           <div class="card__description__section">
@@ -137,6 +140,7 @@
             <button
               class="heart__button card__icon-button button__overall"
               type="button"
+              aria-label="Кнопка лайка"
             >
               <!-- <img src="./svg/heart animation white.svg" alt="сердце" /> -->
               <svg
@@ -145,6 +149,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g clip-path="url(#a)">
                   <g class="heart">
@@ -177,21 +182,22 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button button__overall" type="button">
+            <button class="card__like-button button__overall button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </article>
         <article class="card">
           <div class="card__title__section">
-            <h3 class="card__title">1 спринт: А если не получится?</h3>
+            <h2 class="card__title">1 спринт: А если не получится?</h2>
           </div>
           <div class="card__image__section">
-            <label class="image__label header__text">CSS</label>
+            <label class="image__label label__text">CSS</label>
             <img
               class="card__image dropshadow__card"
               src="./images/image.png"
               alt="пиксельное изображение дома на колесах"
+              loading="lazy"
             />
           </div>
           <div class="card__description__section">
@@ -208,6 +214,7 @@
             <button
               class="heart__button card__icon-button button__overall"
               type="button"
+              aria-label="Кнопка лайка"
             >
               <!-- <img src="./svg/heart animation white.svg" alt="сердце" /> -->
               <svg
@@ -216,6 +223,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g clip-path="url(#a)">
                   <g class="heart">
@@ -248,21 +256,22 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button button__overall" type="button">
+            <button class="card__like-button button__overall button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </article>
         <article class="card">
           <div class="card__title__section">
-            <h3 class="card__title">2 спринт: Погоня за идеалом</h3>
+            <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
           </div>
           <div class="card__image__section">
-            <label class="image__label header__text">&lt;desigions&gt;</label>
+            <label class="image__label label__text">&lt;desigions&gt;</label>
             <img
               class="card__imag multifilter__card"
               src="./images/image.png"
               alt="пиксельное изображение дома на колесах"
+              loading="lazy"
             />
           </div>
           <div class="card__description__section">
@@ -281,6 +290,7 @@
             <button
               class="heart__button card__icon-button button__overall"
               type="button"
+              aria-label="Кнопка лайка"
             >
               <!-- <img src="./svg/heart animation white.svg" alt="сердце" /> -->
               <svg
@@ -289,6 +299,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g clip-path="url(#a)">
                   <g class="heart">
@@ -321,21 +332,22 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button button__overall" type="button">
+            <button class="card__like-button button__overall button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </article>
         <article class="card">
           <div class="card__title__section">
-            <h3 class="card__title">2 спринт: О тех, кто рядом</h3>
+            <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
           </div>
           <div class="card__image__section">
-            <label class="image__label header__text">CSS</label>
+            <label class="image__label label__text">CSS</label>
             <img
               class="card__image contrast__card"
               src="./images/image.png"
               alt="пиксельное изображение дома на колесах"
+              loading="lazy"
             />
           </div>
           <div class="card__description__section">
@@ -355,6 +367,7 @@
             <button
               class="heart__button card__icon-button button__overall"
               type="button"
+              aria-label="Кнопка лайка"
             >
               <!-- <img src="./svg/heart animation white.svg" alt="сердце" /> -->
               <svg
@@ -363,6 +376,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g clip-path="url(#a)">
                   <g class="heart">
@@ -395,21 +409,22 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button button__overall" type="button">
+            <button class="card__like-button button__overall button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </article>
         <article class="card">
           <div class="card__title__section">
-            <h3 class="card__title">3 спринт: Обходные стратегии</h3>
+            <h2 class="card__title">3 спринт: Обходные стратегии</h2>
           </div>
           <div class="card__image__section">
-            <label class="image__label header__text">&lt;/html&gt;</label>
+            <label class="image__label label__text">&lt;/html&gt;</label>
             <img
               class="card__image grayscale__card"
               src="./images/image.png"
               alt="пиксельное изображение дома на колесах"
+              loading="lazy"
             />
           </div>
           <div class="card__description__section">
@@ -426,6 +441,7 @@
             <button
               class="heart__button card__icon-button button__overall"
               type="button"
+              aria-label="Кнопка лайка"
             >
               <!-- <img src="./svg/heart animation white.svg" alt="сердце" /> -->
               <svg
@@ -434,6 +450,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g clip-path="url(#a)">
                   <g class="heart">
@@ -466,21 +483,22 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button button__overall" type="button">
+            <button class="card__like-button button__overall button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </article>
         <article class="card">
           <div class="card__title__section">
-            <h3 class="card__title">3 спринт: Когда опускаются руки</h3>
+            <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
           </div>
           <div class="card__image__section">
-            <label class="image__label header__text">&lt;/html&gt;</label>
+            <label class="image__label label__text">&lt;/html&gt;</label>
             <img
               class="card__image sepia__card"
               src="./images/image.png"
               alt="пиксельное изображение дома на колесах"
+              loading="lazy"
             />
           </div>
           <div class="card__description__section">
@@ -499,6 +517,7 @@
             <button
               class="heart__button card__icon-button button__overall"
               type="button"
+              aria-label="Кнопка лайка"
             >
               <!-- <img src="./svg/heart animation white.svg" alt="сердце" /> -->
               <svg
@@ -507,6 +526,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g clip-path="url(#a)">
                   <g class="heart">
@@ -539,21 +559,22 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button button__overall" type="button">
+            <button class="card__like-button button__overall button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </article>
         <article class="card">
           <div class="card__title__section">
-            <h3 class="card__title">«Сейчас я здесь»</h3>
+            <h2 class="card__title">«Сейчас я здесь»</h2>
           </div>
           <div class="card__image__section">
-            <label class="image__label header__text">&lt;/html&gt;</label>
+            <label class="image__label label__text">&lt;/html&gt;</label>
             <img
               class="card__image saturate__card"
               src="./images/image.png"
               alt="пиксельное изображение дома на колесах"
+              loading="lazy"
             />
           </div>
           <div class="card__description__section">
@@ -573,6 +594,7 @@
             <button
               class="heart__button card__icon-button button__overall"
               type="button"
+              aria-label="Кнопка лайка"
             >
               <!-- <img src="./svg/heart animation white.svg" alt="сердце" /> -->
                <svg
@@ -581,6 +603,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g clip-path="url(#a)">
                   <g class="heart">
@@ -613,14 +636,14 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button button__overall" type="button">
+            <button class="card__like-button button__overall button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </article>
         <div class="save__section">
           <button
-            class="button__overall save__button"
+            class="button__overall save__button button"
             type="button"
             onclick="window['dialog__window'].showModal()"
           >
@@ -628,6 +651,7 @@
               class="floppy__icon"
               src="./svg/floppy-min.svg"
               alt="дискета"
+              loading="lazy"
             /><span class="button__text">Сохранить на память</span>
           </button>
         </div>
@@ -636,4 +660,3 @@
     <script src="./scripts/like.js"></script>
   </body>
 </html>
-<!-- card__icon-button -->
