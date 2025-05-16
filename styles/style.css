@@ -50,7 +50,6 @@
   box-shadow: none;
 }
 
-
 .header {
   display: grid;
   inline-size: 100%;
@@ -72,7 +71,6 @@
   border: 2px solid var(--accent-color);
   background-color: var(--element-bg-color);
 }
-
 
 .header__text {
   text-transform: uppercase;
@@ -103,7 +101,7 @@
   outline: 2px black solid;
   cursor: pointer;
   font-family: var(--font-accent);
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .card {
@@ -344,7 +342,6 @@ dialog::backdrop {
 }
 
 @media (width <= 368px) {
-
   .header__text__section {
     inline-size: 100vh;
     padding-block: 7.5rem;
