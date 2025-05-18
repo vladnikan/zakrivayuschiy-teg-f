@@ -32,7 +32,6 @@
 }
 
 .button__overall:focus-visible {
-  transition: box-shadow 0.3s ease;
   box-shadow: 2px 2px 0 var(--accent-color);
 }
 
@@ -41,19 +40,23 @@
 }
 
 .heart__button {
-  transition: 0.3s ease;
+  height: 35px;
+}
+
+.heart__button svg {
+  height: 36px;
+  width: 36px;
 }
 
 .heart__button:focus-visible {
   outline: 2px solid black;
-  outline-offset: -5px;
-  box-shadow: none;
+  /* outline-offset: -5px; */
+  /* box-shadow: none; */
 }
 
 .header {
   display: grid;
   inline-size: 100%;
-  /* block-size: 960px; */
   justify-content: center;
 }
 
@@ -64,10 +67,8 @@
   align-items: center;
   inline-size: clamp(375px, 48.1vw + 190px, 700px);
   padding-block: 8rem;
-  /* block-size: clamp(327px, 3.53vw + 312px, 368px); */
   margin-block-start: 95px;
   margin-block-end: 100px;
-  /* max-block-size: 368px; */
   border: 2px solid var(--accent-color);
   background-color: var(--element-bg-color);
 }
@@ -120,7 +121,6 @@
   padding-inline-end: 10px;
   padding-block-start: 5px;
   padding-block-end: 5px;
-  /* min-block-size: 30px; */
 }
 
 .card__title {
@@ -169,6 +169,7 @@
   margin-block-start: 25px;
   margin-block-end: 25px;
   justify-content: flex-end;
+  gap: 6px;
 }
 
 .card__like-button {
@@ -207,14 +208,6 @@
   block-size: 27px;
 }
 
-/* .heart__button:focus {
-  outline: none;
-}
-
-.heart__button:focus-visible {
-  border: 2px solid var(--accent-color);
-} */
-
 .button__text {
   font-family: var(--font-accent);
   color: var(--element-bg-color);
@@ -250,18 +243,16 @@
   align-self: center;
   background-color: white;
   z-index: 2;
-  /* mix-blend-mode: difference; */
 }
 
 .dialog__window[open] {
   border: none;
   outline: 2px black solid;
-  /* inline-size: clamp(341px, calc(341px + 1.13vw), 353px); */
-  /* block-size: 191px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 33px 30px;
 }
 
 dialog::backdrop {
@@ -279,13 +270,14 @@ dialog::backdrop {
 .dialog__window img {
   inline-size: 39px;
   block-size: 39px;
-  margin-inline-start: clamp(30px, calc(42px - 1.13vw), 42px);
+  /* margin-inline-start: clamp(30px, calc(42px - 1.13vw), 42px); */
   margin-inline-end: 20px;
 }
 
 .dialog__text {
   font-size: 14px;
   inline-size: clamp(198px, calc(198px + 3.38vw), 234px);
+  justify-self: start;
   margin-block-end: 30px;
   line-height: 150%;
 }
@@ -313,7 +305,7 @@ dialog::backdrop {
   filter: opacity(5);
 }
 
-.dropshadow__card {
+.shadow-filter__card {
   filter: drop-shadow(5px 15px 3px rgba(0, 0, 0, 0.8));
 }
 
@@ -341,9 +333,9 @@ dialog::backdrop {
   opacity: 0;
 }
 
-@media (width <= 368px) {
+@media (width <= 375px) {
   .header__text__section {
-    inline-size: 100vh;
+    inline-size: 100vw;
     padding-block: 7.5rem;
     margin-block-start: 85px;
   }
@@ -373,5 +365,9 @@ dialog::backdrop {
     margin-block-start: 15px;
     margin-inline-end: 8px;
     margin-block-end: 10px;
+  }
+
+  .dialog__window[open] {
+    padding: 30px 35px;
   }
 }
